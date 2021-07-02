@@ -1,0 +1,35 @@
+.contact{
+    grid-column: col-start 6 / span 1;
+    
+    &__list{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        list-style: none;
+        justify-content: space-between;
+    }
+
+    &__icon{
+        width: 2.5rem;
+        height: 2.5rem;
+
+        // @media only screen and (max-width: $bp-large){
+        //     width: 2rem;
+        //     height: 2rem;
+        // }
+    }
+
+    &__icon--insta{
+        fill: #ff0f0f;
+    }
+    &__icon--twitter{
+        fill: #1da1f2;
+    }
+    &__icon--linkedin{
+        fill: #0a66c2;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        grid-row: 1 / span 1;
+    }
+}

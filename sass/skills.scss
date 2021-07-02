@@ -1,0 +1,73 @@
+.skills{
+    grid-row: 3 / span 1;
+    grid-column: center-start / center-end;
+    margin-top: 6rem;
+    box-shadow: 0 .5rem 2rem $color-grey-light-2;
+    padding: 5rem 4rem;
+    background: #fff;
+
+    @media only screen and (max-width: $bp-large){
+        padding: 5rem 2rem;
+    }
+}
+
+.skill{
+    &__content{
+        grid-column: center-start / center-end;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        // grid-template-rows: repeat(auto-fill, 1fr);
+        grid-auto-rows: repeat(auto-fit, 1fr);
+        align-items: center;
+        gap: 4rem;
+    }
+    &__item{
+        padding: 2rem;
+        font-size: 1.6rem;
+        text-align: center;
+        background: #faebd7;
+        position: relative;
+        overflow: hidden;
+        font-weight: 600;
+        color: $color-grey-light-1;
+    }
+
+    &__item::after{
+        content: '';
+        width: 8rem;
+        height: 142%;
+        background-color: rgba($color-white, 0.2);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+                    rotate(-90deg);
+        border-radius: 20rem 40rem;
+    }
+
+    &__item:nth-child(1n){
+        background: rgba($color-random-1, 0.8);
+    }
+    &__item:nth-child(2n){
+        background: rgba($color-random-2, 0.8);
+    }
+    &__item:nth-child(3n){
+        background: rgba($color-random-3, 0.8);
+    }
+    &__item:nth-child(4n){
+        background: rgba($color-random-4, 0.8);
+    }
+    &__item:nth-child(5n){
+        background: rgba($color-random-5, 0.8);
+    }
+    &__item:nth-child(6n){
+        background: rgba($color-random-6, 0.8);
+    }
+    &__item:nth-child(7n){
+        background: rgba($color-random-7, 0.8);
+    }
+    &__item:nth-child(8n){
+        background: rgba($color-random-8, 0.8);
+    }
+}
