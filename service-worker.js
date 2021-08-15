@@ -10,7 +10,8 @@ this.addEventListener("install", event => {
                 './img/Sibi_Mahesh_Resume.docx',
                 './favicon.ico',
                 'https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i',
-                './index.html'
+                './index.html',
+                '/'
             ]);
         })
     )

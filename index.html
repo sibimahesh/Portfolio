@@ -22,7 +22,7 @@
 
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./service-worker.js').then(() => {
+                navigator.serviceWorker.register(`${window.location.href}/service-worker.js`).then(() => {
                     console.log(
                         'This web app is being served cache-first by a service worker.'
                     );
