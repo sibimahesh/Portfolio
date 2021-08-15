@@ -1,17 +1,17 @@
-let cacheData = 'portfolioV8';
+let cacheData = 'portfolioV9';
 console.log("Inside service worker");
 this.addEventListener("install", event => {
     event.waitUntil(
         caches.open(cacheData).then((cache) => {
             cache.addAll([
-                '/Portfolio/css/style.css',
-                '/Portfolio/img/profile-pic.jpg',
-                '/Portfolio/img/sprite.svg',
-                '/Portfolio/img/Sibi_Mahesh_Resume.docx',
-                '/Portfolio/favicon.ico',
+                './Portfolio/css/style.css',
+                './Portfolio/img/profile-pic.jpg',
+                './Portfolio/img/sprite.svg',
+                './Portfolio/img/Sibi_Mahesh_Resume.docx',
+                './Portfolio/favicon.ico',
                 'https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i',
-                '/Portfolio/',
-                '/Portfolio/index.html',
+                './Portfolio/',
+                './Portfolio/index.html',
             ]);
         })
     )
