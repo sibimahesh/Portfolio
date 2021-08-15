@@ -1,4 +1,4 @@
-let cacheData = 'porfolioV2';
+let cacheData = 'portfolioV2';
 
 this.addEventListener("install", event => {
     event.waitUntil(
@@ -9,8 +9,8 @@ this.addEventListener("install", event => {
                 './img/sprite.svg',
                 './img/Sibi_Mahesh_Resume.docx',
                 './favicon.ico',
-                './index.html',
-                '/'
+                'https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i',
+                './index.html'
             ]);
         })
     )
