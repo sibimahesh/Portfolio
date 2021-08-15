@@ -1,11 +1,10 @@
-let cacheData = 'portfolioV6';
+let cacheData = 'portfolioV7';
 console.log("Inside service worker");
 this.addEventListener("install", event => {
     event.waitUntil(
         caches.open(cacheData).then((cache) => {
             cache.addAll([
-                'https://sibimahesh.github.io/Portfolio/css/style.css',
-                '/'
+                'https://sibimahesh.github.io/Portfolio/css/style.css'
             ]);
         })
     )
