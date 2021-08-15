@@ -4,14 +4,13 @@ this.addEventListener("install", event => {
     event.waitUntil(
         caches.open(cacheData).then((cache) => {
             cache.addAll([
-                './css/style.css',
-                './img/profile-pic.jpg',
-                './img/sprite.svg',
-                './img/Sibi_Mahesh_Resume.docx',
-                './favicon.ico',
+                '/Portfolio/css/style.css',
+                '/Portfolio/img/profile-pic.jpg',
+                '/Portfolio/img/sprite.svg',
+                '/Portfolio/img/Sibi_Mahesh_Resume.docx',
+                '/Portfolio/favicon.ico',
                 'https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i',
-                './index.html',
-                this.location.href,
+                '/Portfolio/index.html',
                 '/'
             ]);
         })
