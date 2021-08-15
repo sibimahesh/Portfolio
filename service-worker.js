@@ -1,5 +1,5 @@
-let cacheData = 'portfolioV2';
-
+let cacheData = 'portfolioV3';
+console.log("Inside service worker");
 this.addEventListener("install", event => {
     event.waitUntil(
         caches.open(cacheData).then((cache) => {
