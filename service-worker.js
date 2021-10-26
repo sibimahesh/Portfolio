@@ -1,4 +1,4 @@
-let cacheData = 'SK_Portfolio_V2';
+let cacheData = 'SK_Portfolio_V2.0.1';
 this.addEventListener("install", event => {
     event.waitUntil(
         caches.open(cacheData).then((cache) => {
